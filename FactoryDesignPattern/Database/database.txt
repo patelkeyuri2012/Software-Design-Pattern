@@ -1,0 +1,61 @@
+- Write a program in java where user want to connect his/her application with either MySql or Oracle or PostgreSql or any other database using factory method with structure, class diagram, participant and mapping, consequence, collabration
+
+
+Participant and Mapping:
+
+Database
+participant: Interface defining database operations.
+mapping: Connects to MySQLDatabase, OracleDatabase, PostgreSQLDatabase.
+
+MySQLDatabase
+participant: Concrete implementation for MySQL database.
+mapping: Implements Database.
+
+OracleDatabase
+participant: Concrete implementation for Oracle database.
+mapping: Implements Database.
+
+PostgreSQLDatabase
+participant: Concrete implementation for PostgreSQL database.
+mapping: Implements Database.
+
+DatabaseFactory
+participant: Factory class for creating database instances.
+mapping: Returns instances of MySQLDatabase, OracleDatabase, PostgreSQLDatabase.
+
+Main
+participant: Client class.
+mapping: Requests database instances from DatabaseFactory.
+
+
+Consequences:
+
+Advantages:
+Loose Coupling: Promotes loose coupling between client code and concrete implementations.
+Scalability: Easy addition of new database types.
+Flexibility: Allows for flexible object creation.
+
+Disadvantages:
+Complexity: Can introduce complexity in the codebase if overused or misapplied.
+
+
+
+Collaboration:
+
+Interface: Database
+Collaboration: Defines the contract for database operations. Concrete classes (MySQLDatabase, OracleDatabase, PostgreSQLDatabase) implement this interface.
+
+Factory Class: DatabaseFactory
+Collaboration: Responsible for creating instances of concrete database classes (MySQLDatabase, OracleDatabase, PostgreSQLDatabase) based on client requests.
+
+Concrete Class: MySQLDatabase, OracleDatabase, PostgreSQLDatabase
+Collaboration: Implements the Database interface. These concrete classes provide specific implementations for database operations.
+
+
+
+
+
+
+
+
+
