@@ -5,7 +5,9 @@ public class Main {
         System.out.println("Description: " + vanillaIceCream.getDescription());
         System.out.println("Cost: " + vanillaIceCream.getCost());
 
-        
+        IceCream nutsIceCream = new Nuts(vanillaIceCream);
+        System.out.println("Description: " + nutsIceCream.getDescription());
+        System.out.println("Cost: " + nutsIceCream.getCost());
 
         IceCream cookiesIceCream = new Cookies(vanillaIceCream);
         System.out.println("Description: " + cookiesIceCream.getDescription());
