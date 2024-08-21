@@ -11,4 +11,4 @@
   - Proxy Design Pattern
   - Singleton Design Pattern
   - State Design Pattern
-  - Strategy Design Pattern
+  
