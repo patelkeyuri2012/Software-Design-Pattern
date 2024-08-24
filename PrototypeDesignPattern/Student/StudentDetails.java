@@ -3,6 +3,9 @@ public class StudentDetails {
     private int rollNo;
     String name;
 
+    StudentDetails() {
+
+    }
 
     StudentDetails(int age, int rollNo, String name) {
         this.age = age;
